@@ -1,0 +1,9 @@
+---
+- name: Install httpd
+  hosts: all
+  become: true
+  tasks:
+  - name: run dnf command 
+    dnf:
+      name: httpd
+      state: installed
