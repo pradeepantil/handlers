@@ -6,4 +6,4 @@
   - name: run dnf command 
     dnf:
       name: httpd
-      state: installed
+      state: present
